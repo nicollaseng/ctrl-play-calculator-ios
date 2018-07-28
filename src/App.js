@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Cabecalho from './components/Cabecalho.js'
-import Resultado from './components/Resultado.js'
-import Numero from './components/Numero.js'
+import Header from './components/Header.js'
+import Result from './components/Result.js'
+import Number from './components/Number.js'
+import Action from './components/Action.js'
 import {
   AppRegistry,
   StyleSheet,
@@ -13,15 +14,16 @@ export default class App extends Component {
   render() {
     return (
         <View>
-            <Cabecalho />
-            <Resultado />
-            <Numero />
+            <Header />
+            <Result />
+            <Number />
+            <Action />
         </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  
+
 });
 
