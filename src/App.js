@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cabecalho from './components/Cabecalho.js'
 import Resultado from './components/Resultado.js'
+import Numero from './components/Numero.js'
 import {
   AppRegistry,
   StyleSheet,
@@ -14,6 +15,7 @@ export default class App extends Component {
         <View>
             <Cabecalho />
             <Resultado />
+            <Numero />
         </View>
     );
   }

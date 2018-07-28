@@ -8,7 +8,8 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TextInput placeholder="Resultado" style={textInputStyle}/>
+        <TextInput placeholder="Primeiro Numero" style={textInputStyle}/>
+        <TextInput placeholder="Segundo Numero" style={textInputStyle}/>
     </View>
 )
 
@@ -16,11 +17,13 @@ export default props => (
 const styles = StyleSheet.create({
   generalView: {
       flex:1,
-      marginBottom: 30,
-      marginLeft: 10
+      flexDirection: 'row',
+      justifyContent: 'space-between'
   },
   textInputStyle: {
-      height: 60
+      height: 60,
+      width: 200,
+      margin: 10
   }
 });
 
