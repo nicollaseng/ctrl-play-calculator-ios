@@ -3,6 +3,7 @@ import Header from './components/Header.js'
 import Result from './components/Result.js'
 import Number from './components/Number.js'
 import Action from './components/Action.js'
+import Operation from './components/Operation.js'
 import {
   AppRegistry,
   StyleSheet,
@@ -17,7 +18,9 @@ export default class App extends Component {
             <Header />
             <Result />
             <Number />
+            <Operation />
             <Action />
+            
         </View>
     );
   }

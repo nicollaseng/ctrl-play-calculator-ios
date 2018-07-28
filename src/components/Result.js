@@ -16,12 +16,14 @@ export default props => (
 const styles = StyleSheet.create({
   generalView: {
       flex:1,
-      marginTop: 20,
+      marginTop: 40,
       marginBottom: 50,
       marginLeft: 10
   },
   textInputStyle: {
-      height: 60
+      height: 60,
+      fontSize: 30,
+      color: 'grey'
   }
 });
 

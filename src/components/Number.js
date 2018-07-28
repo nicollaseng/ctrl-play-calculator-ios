@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   textInputStyle: {
       height: 60,
       width: 200,
-      margin: 10
+      margin: 10,
   }
 });
 
