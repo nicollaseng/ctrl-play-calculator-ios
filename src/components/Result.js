@@ -16,7 +16,8 @@ export default props => (
 const styles = StyleSheet.create({
   generalView: {
       flex:1,
-      marginBottom: 30,
+      marginTop: 20,
+      marginBottom: 50,
       marginLeft: 10
   },
   textInputStyle: {
