@@ -8,7 +8,7 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TouchableOpacity style={touchableStyle}>
+        <TouchableOpacity style={touchableStyle} onPress={props.calculate}>
             <Text style={textInputStyle}>Calcular</Text>
         </TouchableOpacity>
     </View>

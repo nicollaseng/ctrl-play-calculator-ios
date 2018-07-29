@@ -8,8 +8,12 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TextInput placeholder="Primeiro Numero" style={textInputStyle}/>
-        <TextInput placeholder="Segundo Numero" style={textInputStyle}/>
+        <TextInput placeholder="Primeiro Numero" 
+                    value={props.var1 } style={textInputStyle}
+                    onChangeText={value => props.update(props.name1,value)}/>
+        <TextInput placeholder="Segundo Numero" 
+                    value={props.var2} style={textInputStyle} 
+                    onChangeText={value => props.update(props.name2,value)}/>
     </View>
 )
 
