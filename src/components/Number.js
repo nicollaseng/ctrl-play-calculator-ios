@@ -10,10 +10,12 @@ export default props => (
     <View style={generalView}>
         <TextInput placeholder="0" 
                     value={props.var1 } style={textInputStyle}
-                    onChangeText={value => props.update(props.name1,value)}/>
+                    onChangeText={value => props.update(props.name1,value)}
+                    keyboardType={'numeric'}/>
         <TextInput placeholder="0" 
                     value={props.var2} style={textInputStyle} 
-                    onChangeText={value => props.update(props.name2,value)}/>
+                    onChangeText={value => props.update(props.name2,value)}
+                    keyboardType={'numeric'}/>
     </View>
 )
 

@@ -64,8 +64,17 @@ export default class App extends Component {
             <Operation operation={this.state.operation} 
                       updateOperation={this.updateOperation}/>
             <Action calculate={this.calculate}/>
-            
+            <Text style={devText}> Desenvolvedor: Nicollas Linhares </Text>
         </View>
     );
   }
 }
+const styles = StyleSheet.create({
+  devText: {
+      fontSize: 17,
+      color: 'grey',
+      textAlign: 'center'
+  }
+});
+
+const {devText} = styles

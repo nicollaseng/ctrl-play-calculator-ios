@@ -18,7 +18,8 @@ export default props => (
 const styles = StyleSheet.create({
   generalView: {
     alignItems: 'center',
-    marginVertical: 0
+    marginTop: -30,
+    marginBottom: 15
   },
   textInputStyle: {
     color: 'white',
