@@ -8,7 +8,8 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TextInput placeholder="Resultado" style={textInputStyle}/>
+        <TextInput placeholder="Resultado" style={textInputStyle}
+                    value={props.result}/>
     </View>
 )
 

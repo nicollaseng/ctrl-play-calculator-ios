@@ -17,7 +17,8 @@ export default class App extends Component {
     this.state = {
       num1: '',
       num2: '',
-      operation: ''
+      operation: 'soma',
+      viewResult: ''
     }
     this.calculate = this.calculate.bind(this)
     this.inputUpdate = this.inputUpdate.bind(this)
@@ -26,18 +27,18 @@ export default class App extends Component {
 
   calculate(){
     var result
-
-    if(this.state.operation === 'soma'){
+    if(this.state.operation == 'soma'){
       result = parseFloat(this.state.num1) + parseFloat(this.state.num2)
-    }else if(this.state.operation === 'subtracao'){
+    }else if(this.state.operation == 'subtracao'){
       result = parseFloat(this.state.num1) - parseFloat(this.state.num2)
-    }if(this.state.operation === 'multiplicacao'){
+    }if(this.state.operation == 'multiplicacao'){
       result = parseFloat(this.state.num1) * parseFloat(this.state.num2)
-    }if(this.state.operation === 'divisao'){
+    }if(this.state.operation == 'divisao'){
       result = parseFloat(this.state.num1) / parseFloat(this.state.num2)
     }
 
     console.log(result)
+    this.setState({viewResult: result})
   }
 
   inputUpdate(num,value){
@@ -54,7 +55,7 @@ export default class App extends Component {
     return (
         <View>
             <Header />
-            <Result />
+            <Result result={this.state.viewResult.toString()}/>
             <Number update ={this.inputUpdate}
                  var1={this.state.num1.toString()} 
                  var2={this.state.num2.toString()}
@@ -68,8 +69,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-
-});
-
