@@ -8,7 +8,7 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TextInput placeholder="Resultado" style={textInputStyle}
+        <TextInput placeholder="0" style={textInputStyle}
                     value={props.result}/>
     </View>
 )
@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
   },
   textInputStyle: {
       height: 60,
-      fontSize: 30,
-      color: 'grey'
+      fontSize: 50,
+      color: '#0059b3'
   }
 });
 

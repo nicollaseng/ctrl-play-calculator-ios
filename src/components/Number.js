@@ -8,10 +8,10 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TextInput placeholder="Primeiro Numero" 
+        <TextInput placeholder="0" 
                     value={props.var1 } style={textInputStyle}
                     onChangeText={value => props.update(props.name1,value)}/>
-        <TextInput placeholder="Segundo Numero" 
+        <TextInput placeholder="0" 
                     value={props.var2} style={textInputStyle} 
                     onChangeText={value => props.update(props.name2,value)}/>
     </View>
@@ -27,8 +27,9 @@ const styles = StyleSheet.create({
       height: 60,
       width: 200,
       margin: 10,
-      fontSize: 17,
-      color: 'grey'
+      fontSize: 30,
+      color: '#ff6600',
+      fontWeight: 'bold'
   }
 });
 
