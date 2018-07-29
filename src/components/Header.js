@@ -12,7 +12,7 @@ export default props => (
     <View style={generalView}>
         <Image source={logo} style={imageStyle}/>
         <View>
-          <Text style={textStyle}>Calculadora</Text>
+          <Text style={textStyle}>Calculadora Play</Text>
         </View>
     </View>
 )
@@ -30,9 +30,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   textStyle:{
-    fontSize: 30,
+    fontSize: 50,
     color: '#ff6600',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontFamily: 'BEARHUGSBYRATTICSASSIN-Regular'
   }
 });
 
