@@ -8,7 +8,7 @@ import {
 export default class Operation extends Component {
     render(){
         return(
-            <Picker>
+            <Picker itemStyle={generalPicker}>
                 <Picker.item label="Soma" value="soma"/>
                 <Picker.item label="Subtracao" value="subtracao"/>
                 <Picker.item label="Multiplicação" value="multiplicacao"/>
@@ -17,4 +17,13 @@ export default class Operation extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    generalPicker: {
+        marginTop: -40,
+        marginBottom: 40
+    }
+  });
+  
+  const {generalPicker} = styles
 

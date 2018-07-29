@@ -8,7 +8,7 @@ import {
 
 export default props => (
     <View style={generalView}>
-        <TouchableOpacity>
+        <TouchableOpacity style={touchableStyle}>
             <Text style={textInputStyle}>Calcular</Text>
         </TouchableOpacity>
     </View>
@@ -18,7 +18,7 @@ export default props => (
 const styles = StyleSheet.create({
   generalView: {
     alignItems: 'center',
-    marginVertical: 70
+    marginVertical: 0
   },
   textInputStyle: {
     color: 'white',
@@ -26,7 +26,12 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     padding: 20
+  },
+  touchableStyle: {
+      borderRadius: 20,
+      borderWidth: 5,
+      borderColor: '#ff6600'
   }
 });
 
-const {generalView, textInputStyle} = styles
+const {generalView, textInputStyle, touchableStyle} = styles

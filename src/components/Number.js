@@ -16,7 +16,6 @@ export default props => (
 
 const styles = StyleSheet.create({
   generalView: {
-      flex:1,
       flexDirection: 'row',
       justifyContent: 'space-between'
   },
@@ -24,6 +23,8 @@ const styles = StyleSheet.create({
       height: 60,
       width: 200,
       margin: 10,
+      fontSize: 17,
+      color: 'grey'
   }
 });
 
