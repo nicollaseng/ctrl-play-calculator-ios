@@ -1,22 +1,33 @@
 import React from 'react';
+import DoneButton from 'react-native-keyboard-done-button'
 import {
-  Image,
+  TouchableWithoutFeedback,
+  Keyboard,
   StyleSheet,
   View,
   TextInput
-} from 'react-native';
+} from 'react-native'
+
+var dismissKeyboard = require('dismissKeyboard')
 
 export default props => (
+    
+    <TouchableWithoutFeedback onPress={() => dismissKeyboard()} accessible={false}>
     <View style={generalView}>
+
         <TextInput placeholder="0" 
                     value={props.var1 } style={textInputStyle}
                     onChangeText={value => props.update(props.name1,value)}
-                    keyboardType={'numeric'}/>
+                    keyboardType={'number-pad'}
+                    onSubmitEditing={Keyboard.dismiss}/>
         <TextInput placeholder="0" 
                     value={props.var2} style={textInputStyle} 
                     onChangeText={value => props.update(props.name2,value)}
-                    keyboardType={'numeric'}/>
+                    keyboardType={'number-pad'} 
+                    onSubmitEditing={Keyboard.dismiss}
+                    />
     </View>
+    </TouchableWithoutFeedback>
 )
 
 
